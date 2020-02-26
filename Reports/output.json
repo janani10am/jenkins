@@ -1,0 +1,275 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 17271499100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is in mfDesign login page",
+            "match": {
+              "location": "Loginstepdefinition.user_is_in_mfDesign_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-22T09:25:35.261Z",
+        "line": 6,
+        "name": "To verify login with valid \u0026 invalid inputs",
+        "description": "",
+        "id": "to-validate-facebook-login-functionality;to-verify-login-with-valid-\u0026-invalid-inputs",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2755933300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enter valid and invalid email and password",
+            "match": {
+              "location": "Loginstepdefinition.user_enter_valid_and_invalid_email_and_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "jansenthil@gmail.com",
+                  "zjDB3254"
+                ]
+              },
+              {
+                "cells": [
+                  "lavu123@gmail.com",
+                  "12345asfrwe"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1517173200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user click login button",
+            "match": {
+              "location": "Loginstepdefinition.user_click_login_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To validate facebook login functionality",
+    "description": "",
+    "id": "to-validate-facebook-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFiles/Login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 15974763900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is in mfDesign search page",
+            "match": {
+              "location": "SearchStepDefinition.user_is_in_mfDesign_search_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-22T09:25:56.837Z",
+        "line": 12,
+        "name": "To verify search with multiple inputs",
+        "description": "",
+        "id": "to-validate-the-search-functionality;to-verify-search-with-multiple-inputs;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3291613900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters \"dining set\" in search tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dining set",
+                  "offset": 13
+                }
+              ],
+              "location": "SearchStepDefinition.user_enters_in_search_tab(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(),\u0027Elijah\u0027)] \"}\n  (Session info: chrome\u003d79.0.3945.130)\n  (Driver info: chromedriver\u003d2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-AJFN9L1\u0027, ip: \u0027192.168.43.17\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\\Users\\JANANI\\AppData\\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.130, webStorageEnabled: true}\nSession ID: 32ae58cfb4ffa68c86d5044d880e7350\n*** Element info: {Using\u003dxpath, value\u003d//a[contains(text(),\u0027Elijah\u0027)] }\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat com.stepDefinition.SearchStepDefinition.user_click_search_button(SearchStepDefinition.java:46)\r\n\tat ✽.user click search button(file:src/test/resources/FeatureFiles/Search.feature:8)\r\n",
+              "duration": 3138480000,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user click search button",
+            "match": {
+              "location": "SearchStepDefinition.user_click_search_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 15006142500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is in mfDesign search page",
+            "match": {
+              "location": "SearchStepDefinition.user_is_in_mfDesign_search_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-22T09:26:19.250Z",
+        "line": 13,
+        "name": "To verify search with multiple inputs",
+        "description": "",
+        "id": "to-validate-the-search-functionality;to-verify-search-with-multiple-inputs;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2667221200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters \"single seater sofa\" in search tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "single seater sofa",
+                  "offset": 13
+                }
+              ],
+              "location": "SearchStepDefinition.user_enters_in_search_tab(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 981743900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click search button",
+            "match": {
+              "location": "SearchStepDefinition.user_click_search_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 20406110800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is in mfDesign search page",
+            "match": {
+              "location": "SearchStepDefinition.user_is_in_mfDesign_search_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-22T09:26:37.955Z",
+        "line": 15,
+        "name": "To verify search with mouse over option",
+        "description": "",
+        "id": "to-validate-the-search-functionality;to-verify-search-with-mouse-over-option",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "user moves to Sofa option",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "user click Bean bag",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To validate the Search functionality",
+    "description": "",
+    "id": "to-validate-the-search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFiles/Search.feature",
+    "tags": []
+  }
+]
